@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/texto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <title>Portfólio de Luan</title>
+</head>
+<body>
+
+  <!-- NAVBAR DESKTOP -->
+<nav class="navbar navbar-dark navbar-custom shadow-sm px-4 d-none d-lg-flex bold">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="img/logoLuan.png" alt="logo" width="140" height="80"  id="logoDesktop" style="filter:none">
+    </a>
+
+    <div class="d-flex align-items-center">
+      <ul class="navbar-nav d-flex flex-row gap-3 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobremim">Sobre mim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#curriculo">Currículo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="dropdown ms-auto ms-lg-3">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="colorDropdownDesktop" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-palette-fill me-1"></i> <span id="theme-label-desktop">Tema</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="colorDropdownDesktop">
+          <li>
+            <button type="button" class="dropdown-item theme-option" data-theme="black-lava">
+              <i class="bi bi-circle-fill me-2" style="color: #ff0015;"></i>
+              Black Lava
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item theme-option" data-theme="ocean-green">
+              <i class="bi bi-circle-fill me-2" style="color: #0EA5E9;"></i>
+              <i class="bi bi-circle-fill me-2" style="color: #14B8A6; margin-left: -8px;"></i>
+              Ocean Green
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- NAVBAR MOBILE -->
+  <nav class="navbar navbar-dark navbar-custom shadow-sm px-4 d-lg-none bold">
+    <div class="container-fluid justify-content-between">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">
+        <img src="img/logoLuan.png" alt="logo" width="120" height="80" id="logoMobile" style="filter:none">
+      </a>
+
+      <div class="dropdown">
+        <button class="btn btn-outline-light dropdown-toggle" type="button" id="colorDropdownMobile" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-palette-fill"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="colorDropdownMobile">
+          <li>
+            <button type="button" class="dropdown-item theme-option" data-theme="black-lava">
+              <i class="bi bi-circle-fill me-2" style="color: #ff0015;"></i>
+              Black Lava
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item theme-option" data-theme="ocean-green">
+              <i class="bi bi-circle-fill me-2" style="color: #0EA5E9;"></i>
+              <i class="bi bi-circle-fill me-2" style="color: #14B8A6; margin-left: -8px;"></i>
+              Ocean Green
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuLateralLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobremim">Sobre mim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#curriculo">Currículo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <section class="inicio d-flex justify-content-center align-items-center text-center" id="inicio">
+      <div class="container pt-5 pb-5">
+        <h1 id="typed-text"> </h1>
+      </div>
+    </section>
+
+    <section class="sobremim d-flex justify-content-center align-items-center" id="sobremim">
+      <div class="card-sobre text-white p-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <img src="img/fotoLuan.jpg" alt="Foto Luan" class="img-fluid rounded foto-sobre w-100">
+            </div>
+            <div class="col-md-8">
+              <h1 class="section-title">Sobre mim</h1>
+              <p class="bold">
+                Ola, sou estudante de Sistemas para Internet na Fatec - Lins. <br>
+                Sou apaixondo por gatos e musica, no tempo livre gosto de jogar jogos online, viajar, escutar musica e fotografar paisagens
+                <br><br>
+                Sou desenvolvedor front-end com experiência em HTML, CSS e Angular, mas estou aberto para aprender e explorar novas tecnologias, mas tambem gosto das áreas de UX design e banco de dados.
+                <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="projetos py-5" id="projetos">
+      <div class="container d-flex justify-content-center">
+        <div class="card-projetos">
+          <h1 class="text-center mb-5 section-title">Projetos</h1>
+          <div class="row g-4 justify-content-center">
+            
+            <!-- Card Filho 1 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/mirrorFashion.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto realizado no primeiro semestre, feito apenas com HTML e CSS, feito para aprender os conceitos basicos da programação. Durante o desenvolvimento, foram explorados fundamentos de design visual, semântica HTML e estruturação de páginas web.</p>
+                </div>
+                <h3>mirrorFashion</h3>
+              </div>
+            </div>
+    
+            <!-- Card Filho 2 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/Yolo.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto desenvolvido no segundo semestre, consistindo em um site responsivo criado com HTML, CSS e o framework Materialize. O objetivo foi aplicar conceitos de design responsivo e organização visual, resultando em uma interface adaptável a diferentes dispositivos.</p>
+                </div>
+                <h3>Yolo</h3>
+              </div>
+            </div>
+    
+            <!-- Card Filho 3 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/Crud.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto realizado no terceiro semestre, consistindo em um CRUD de demandas de manutenção de computadores. Desenvolvido com HTML, CSS e JavaScript, permite cadastrar clientes, serviços e ordens de serviço, com cálculo automático de custos. O sistema utiliza Local Storage para armazenar os dados e aplica conceitos de programação orientada a objetos.</p>
+                </div>
+                <h3>RedTech</h3>
+              </div>
+            </div>
+    
+            <!-- Card Filho 4 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/bd.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto desenvolvido no quarto semestre, criando um banco de dados relacional para uma gravadora musical. Inclui tabelas de artistas, álbuns, músicas, clientes e vendas, com chaves primárias, estrangeiras e índices. Foram realizadas operações de inserção, atualização, exclusão e consultas, permitindo organizar e consultar informações de forma estruturada e eficiente.</p>
+                </div>
+                <h3>Gravadora de Musica</h3>
+              </div>
+            </div>
+    
+            <!-- Card Filho 5 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/planejador.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto desenvolvido no quinto semestre, voltado ao planejamento de custos de viagem. Permite registrar despesas com transporte, hospedagem, alimentação e lazer, gerando estimativas totais. Desenvolvido com Ionic e Capacitor, o aplicativo oferece uma interface intuitiva e responsiva, unindo organização financeira e experiência do usuário.</p>
+                </div>
+                <h3>Planejador de Viagem</h3>
+              </div>
+            </div>
+    
+            <!-- Card Filho 6 -->
+            <div class="col-md-4">
+              <div class="card-filho">
+                <img src="img/PooJava.png" class="card-img-top" alt="">
+                <div class="card-overlay">
+                  <p class="card-desc">Projeto desenvolvido no último semestre, voltado ao registro e gerenciamento de produtos em uma loja. Permite cadastrar, excluir e calcular preços finais com base em operações de aumento e desconto, exibindo o total da compra. Desenvolvido com Java e Swing, o sistema apresenta uma interface intuitiva e interativa, integrando conceitos de programação orientada a objetos e manipulação de dados em tabela.</p>
+                </div>
+                <h3>POO Em Java</h3>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+          
+    <section class="skills py-5" id="skills">
+      <div class="container d-flex justify-content-center">
+        <div class="card-skills text-center position-relative">
+          <h1 class="mb-5 section-title">Skills</h1>
+
+          <div class="skills-floating">
+
+              <div class="skill-float" style="top: 5%; left: 10%;">
+                 <i class="devicon-html5-plain skill-float" title="HTML5"></i>
+              </div>
+              <div class="skill-float" style="top: 0%; left: 90%;">
+                 <i class="devicon-css3-plain skill-float" title="CSS3"></i>
+              </div>
+              <div class="skill-float" style="top: 15%; left: 60%;">
+                 <i class="devicon-javascript-plain skill-float" title="JavaScript"></i>
+              </div>
+              <div class="skill-float" style="top: 45%; left: 50%;">
+                 <i class="devicon-angularjs-plain skill-float" title="Angular"></i>
+              </div>
+              <div class="skill-float" style="top: 68%; left: 75%;">
+                 <i class="devicon-bootstrap-plain skill-float" title="Bootstrap"></i>
+              </div>
+              <div class="skill-float" style="top: 58%; left: 18%;">
+                 <i class="devicon-github-plain skill-float" title="GitHub"></i>
+              </div>
+              <div class="skill-float" style="top: 80%; left: -1%;">
+                  <i class="devicon-photoshop-plain skill-float" title="Photoshop"></i>
+              </div>
+              <div class="skill-float" style="top: 40%; left: 85%;">
+                 <i class="devicon-figma-plain skill-float" title="Figma"></i>
+              </div>
+              <div class="skill-float" style="top: 25%; left: 25%;">
+                 <i class="devicon-mysql-plain skill-float" title="MySQL"></i>
+              </div>
+              <div class="skill-float" style="top: 77%; left: 40%;">
+                <i class="devicon-python-plain skill-float" title="Python"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="curriculo py-5" id="curriculo">
+      <div class="container d-flex justify-content-center">
+        <div class="card-curriculo position-relative p-4">
+          <h1 class="text-center mb-4 section-title">Currículo</h1>
+
+          <div class="curriculo-simulado d-flex flex-wrap align-items-start">
+            <div class="curriculo-info">
+              <h3>Informações Pessoais</h3>
+              <p><strong>Nome:</strong> Luan Henrique</p>
+              <p><strong>Email:</strong> luan.prezottofranca@gmail.com</p>
+              <p><strong>Telefone:</strong> (14) 99730-0928</p>
+              <p><strong>Localização:</strong> Pongaí, SP</p>
+
+              <h3 class="mt-3">Habilidades</h3>
+              <div class="curriculo-item habilidades">
+                <p>Photoshop</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>MySQL</p>
+                <p>Bootstrap</p>
+                <p>Java Web</p>
+                <p>Python</p>
+                <p>Angular</p>
+                <p>Figma</p>
+                <p>CorelDraw</p>
+              </div>
+
+              <h3 class="mt-3">Formação</h3>
+              <div class="curriculo-item">
+                <h4>Sistemas Para Internet</h4>
+                <span>FATEC Lins - 2023 / 2026</span>
+                <p>
+                  Foco em desenvolvimento web, programação orientada a objetos,
+                  banco de dados e frameworks front-end.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-center">
+            <a href="curriculo.pdf" download class="btn-download">Baixar Currículo</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contato py-5" id="contato">
+      <div class="container d-flex justify-content-center">
+        <div class="card-contato position-relative p-4 w-100">
+
+          <h1 class="text-center mb-5 section-title">Contato</h1>
+
+          <div class="row align-items-center mb-4">
+            <div class="col-md-auto d-flex justify-content-center mb-3 mb-md-0">
+              <img src="img/fotopb.jpg" alt="Foto Luan" class="foto-contato img-fluid rounded">
+            </div>
+            <div class="col-md text-md-start text-center">
+              <h3 class="fonte-pixel">Meus Contatos</h3>
+              <p><strong>Telefone:</strong> (14) 99730-0928</p>
+              <p><strong>Email:</strong> <a href="mailto:luan.prezottofranca@gmail.com">luan.prezottofranca@gmail.com</a></p>
+              <p><strong>Instagram:</strong> <a href="https://instagram.com/gamificado" target="_blank">@gamificado</a></p>
+            </div>
+          </div>
+
+          <div class="row align-items-start">
+            <div class="col-md-6 text-md-end text-center mb-3 mb-md-0">
+              <h3 class="fonte-pixel">Contatos da Fatec-Lins</h3>
+              <p><strong>FATEC Lins</strong></p>
+              <p>Email: <a href="mailto:fateclins@fatec.sp.gov.br">fateclins@fatec.sp.gov.br</a></p>
+              <p>Telefone: (14) 3523-1217</p>
+              <p><a href="https://www.fateclins.edu.br" target="_blank">www.fateclins.edu.br</a></p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-start">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.1132480308784!2d-49.75280042396741!3d-21.69832629580409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ecb135a5dd%3A0x66b807178c781125!2sFATEC%20Lins!5e0!3m2!1spt-BR!2sbr!4v1760562218890!5m2!1spt-BR!2sbr"
+                width="100%" height="250" style="border:0; max-width:400px;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+
+           <div class="d-flex justify-content-center d-md-block">
+              <img src="img/logoFatec.svg" alt="Logo Secundária" id="logoFatec" class="logoFatec" style="filter: none;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-asimetrico d-none d-md-block">
+    <div class="footer-content">
+      <p>© 2025 - Luan Henrique</p>
+      <p>Feito com ❤️ e código moderno</p>
+    </div>
+  </footer>
+
+  <footer class="footer-liso d-block d-md-none">
+    <div class="footer-content text-center">
+      <p>© 2025 - Luan Henrique</p>
+      <p>Feito com ❤️ e código moderno</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+  <script src="js/animation.js?v=3.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/texto.js"></script>
+  <script src="js/tema.js?v=3.0"></script>
+
+</body>
+</html>
