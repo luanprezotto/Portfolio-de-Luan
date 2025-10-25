@@ -319,6 +319,11 @@ body.theme-ocean-green .card-filho h3{
   animation: float 8s ease-in-out infinite;
 }
 
+.skill-icons{
+  color: var(--itens-color);
+  font-size: 64px;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
