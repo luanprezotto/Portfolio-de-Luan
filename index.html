@@ -416,7 +416,17 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/texto.js"></script>
   <script src="js/tema.js?v=3.0"></script>
+  <script>
+    document.querySelectorAll('#menuLateral .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const offcanvasElement = document.getElementById('menuLateral');
+        const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvasInstance) {
+          offcanvasInstance.hide();
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
-
