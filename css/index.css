@@ -520,9 +520,9 @@ body.modal-open {
 }
 
 .small-btn {
-  display: inline-block !important;  /* não deixa ocupar toda a largura */
-  width: auto !important;            /* garante que o botão siga o tamanho do texto */
-  padding: 8px 18px;                 /* padding compacto */
+  display: inline-block !important;
+  width: auto !important; 
+  padding: 8px 18px;               
   font-size: 0.95rem;
   border-width: 2px;
   margin: 0 auto;  
@@ -543,4 +543,9 @@ body.modal-open {
 .btn-download1:hover {
   background: transparent;
   color: var(--text-color);
+
+}
+
+text-start{
+  padding: 20px;
 }
