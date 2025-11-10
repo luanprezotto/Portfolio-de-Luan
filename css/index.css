@@ -437,6 +437,14 @@ body.theme-ocean-green .card-filho h3{
 .card-contato a { color: var(--text-color); }
 .card-contato a:hover { text-decoration: underline; }
 
+.card-contato iframe {
+  width: 100% !important;     /* ocupa toda a largura da coluna */
+  max-width: 100% !important; /* ignora o max-width inline */
+  margin-right: 30px !important; /* remove qualquer margem */
+  border: 0;                  /* já está, mas reforça */
+  display: block;             /* remove espaço em linha */
+}
+
 .foto-contato { 
   margin-left: 23px;
   border: 2px solid transparent var(--primary-color);
