@@ -1,7 +1,7 @@
 const words = [
-  { text: 'Dev Front-End!', className: 'font1' },
-  { text: 'Dev Front-End!', className: 'font2' },
-  { text: 'Dev Front-End', className: 'font3' },
+  { text: 'Desenvolvedor Front-End', className: 'font1' },
+  { text: 'Desenvolvedor Front-End', className: 'font2' },
+  { text: 'Desenvolvedor Front-End', className: 'font3' },
 ];
 
 let current = 0;

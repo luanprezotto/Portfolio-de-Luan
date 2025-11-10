@@ -11,7 +11,7 @@
 body.theme-ocean-green .card-filho p {
   color: #fff !important;
 }
-/* VARIÁVEIS DE TEMA*/
+
 :root {
   --primary-color: #ff0015;
   --secondary-color: #8B0000;
@@ -101,7 +101,6 @@ main {
 .bold { font-weight: bold !important; }
 .white { color: white; }
 
-/*NAVBAR*/
 .navbar-custom {
   position: fixed;
   top: 0;
@@ -218,7 +217,6 @@ body.theme-ocean-green .btn-outline-light {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/*CARDS */
 .card-sobre,
 .card-projetos,
 .card-skills,
@@ -242,19 +240,19 @@ body.theme-ocean-green .btn-outline-light {
 
 .inicio-desktop, 
 .inicio-mobile {
-  min-height: 100vh; /* ocupa toda a altura da tela */
+  min-height: 100vh;
   width: 100%;
+  display: block;
+  white-space: nowrap!important;
 }
 
-/* controla o espaçamento entre os textos */
 .inicio-desktop h1,
 .inicio-mobile h1 {
   margin: 0 !important;
   padding: 0 !important;
-  line-height: 1.5; /* espaçamento mais natural */
+  line-height: 1.5; 
 }
 
-/* espaço pequeno entre o primeiro h1 e o typed */
 #typed-tex-desktop,
 #typed-text-mobile {
   margin-top: 0.2rem !important;
@@ -262,17 +260,27 @@ body.theme-ocean-green .btn-outline-light {
   margin-bottom: 0.5rem !important;
 }
 
-/* tamanho da foto */
 .foto-inicio {
-  width: 90%;
-  max-width: 600px;
+  width: 80%;
+  max-width: 350px;
   height: auto;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.foto-inicio-desktop{
+  padding-top: 110px;
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
 }
 
 .inicio-desktop h1.Orbitron,
 .inicio-mobile h1.Orbitron{
-  margin-top: 3rem !important; /* aumenta o espaço acima */
+  margin-top: 3rem !important;
 }
 
 #typed-text-desktop, #typed-text-mobile {
@@ -375,7 +383,6 @@ body.theme-ocean-green .card-filho h3{
   max-height: 70vh;
 }
 
-/*SKILLS ANIMATION*/
 .skills-floating { position: relative; width: 100%; height: 520px; }
 
 .skill-float {
@@ -395,7 +402,6 @@ body.theme-ocean-green .card-filho h3{
   50% { transform: translateY(-20px); }
 }
 
-/*CURRÍCULO*/
 .curriculo-simulado {
   background-color: #fff;
   color: #333;
@@ -428,7 +434,6 @@ body.theme-ocean-green .card-filho h3{
   box-shadow: 0 0 25px var(--primary-color);
 }
 
-/*CONTATO*/
 .card-contato a { color: var(--text-color); }
 .card-contato a:hover { text-decoration: underline; }
 
@@ -444,7 +449,6 @@ body.theme-ocean-green .card-filho h3{
   padding: 20px;
 }
 
-/*FOOTER*/
 .footer-asimetrico, .footer-liso {
   background: var(--footer-bg);
   color: var(--text-color);
@@ -460,7 +464,7 @@ body.theme-ocean-green .card-filho h3{
   padding: 90px 20px 10px;
   min-height: 150px;
   clip-path: polygon(
-     0% 80%, 20% 30%, 25% 60%, 40% 40%, 55% 10%, 70% 40%, 85% 50%, 95% 15%, 100% 80%, 100% 100%, 0% 100%
+    0% 80%, 20% 30%, 25% 60%, 40% 40%, 55% 10%, 70% 40%, 85% 50%, 95% 15%, 100% 80%, 100% 100%, 0% 100%
   );
 }
 
@@ -477,9 +481,6 @@ body.theme-ocean-green .card-filho h3{
 }
 .Orbitron {
   font-family: 'Orbitron', sans-serif;
-}
-.logoFatec {
-  transition: filter 0.5s ease;
 }
 .fonte-pixel {
   font-family: 'Pixelify Sans', sans-serif;
@@ -546,6 +547,6 @@ body.modal-open {
 
 }
 
-text-start{
-  padding: 20px;
+.text-start{
+  padding: 150px;
 }
