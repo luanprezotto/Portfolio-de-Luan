@@ -67,10 +67,11 @@ body.theme-ocean-green .section-title {
   color: #000000 !important;
 }
 
-body,
+body, 
 .card-sobre,
 .card-projetos,
 .card-skills,
+.card-extras,
 .card-curriculo,
 .card-contato,
 .navbar-custom {
@@ -219,6 +220,7 @@ body.theme-ocean-green .btn-outline-light {
 
 .card-sobre,
 .card-projetos,
+.card-extras,
 .card-skills,
 .card-curriculo,
 .card-contato {
@@ -243,7 +245,9 @@ body.theme-ocean-green .btn-outline-light {
   min-height: 100vh;
   width: 100%;
   display: block;
-  white-space: nowrap!important;
+}
+.inicio-desktop{
+  white-space: nowrap;
 }
 
 .inicio-desktop h1,
@@ -253,7 +257,7 @@ body.theme-ocean-green .btn-outline-light {
   line-height: 1.5; 
 }
 
-#typed-tex-desktop,
+#typed-text-desktop,
 #typed-text-mobile {
   margin-top: 0.2rem !important;
   font-size: 2rem;
@@ -310,6 +314,7 @@ body.theme-ocean-green .btn-outline-light {
   background: rgba(0,0,0,0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 body.theme-ocean-green .card-filho {
   background: rgba(255, 255, 255, 0.9);
@@ -558,3 +563,4 @@ body.modal-open {
 .text-start{
   padding: 150px;
 }
+

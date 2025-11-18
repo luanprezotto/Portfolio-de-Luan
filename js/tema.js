@@ -116,7 +116,7 @@ const ThemeManager = {
         }
       });
 
-    document.querySelectorAll('.card-sobre, .card-projetos, .card-skills, .card-curriculo, .card-contato').forEach(card => {
+    document.querySelectorAll('.card-sobre, .card-projetos, .card-skills, .card-curriculo, .card-contato, .card-extras').forEach(card => {
       if (isLight) {
         card.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
         card.style.boxShadow = '0 8px 18px rgba(14, 165, 233, 0.06)';
