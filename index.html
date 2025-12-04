@@ -15,12 +15,11 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
-
     <title>Portfólio de Luan</title>
   </head>
+
   <body>
-    <nav
-      class="navbar navbar-dark navbar-custom shadow-sm px-4 d-none d-lg-flex bold">
+    <nav class="navbar navbar-dark navbar-custom shadow-sm px-4 d-none d-lg-flex bold">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="img/logoLuan.png" alt="logo" width="140" height="80" id="logoDesktop" style="filter: none"/>
@@ -41,7 +40,7 @@
               <a class="nav-link" href="#extras">Extras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#curriculo">Currículo</a>
@@ -56,7 +55,7 @@
               <i class="bi bi-palette-fill me-1"></i>
               <span id="theme-label-desktop">Tema</span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="colorDropdownDesktop">
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="colorDropdownDesktop">
               <li>
                 <button type="button" class="dropdown-item theme-option" data-theme="black-lava">
                   <i class="bi bi-circle-fill me-2" style="color: #ff0015"></i>
@@ -89,7 +88,7 @@
           <button class="btn btn-outline-light dropdown-toggle" type="button" id="colorDropdownMobile" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-palette-fill"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="colorDropdownMobile">
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="colorDropdownMobile">
             <li>
               <button type="button" class="dropdown-item theme-option" data-theme="black-lava">
                 <i class="bi bi-circle-fill me-2" style="color: #ff0015"></i>
@@ -128,7 +127,7 @@
             <a class="nav-link" href="#extras">Extras</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills1">Skills</a>
+            <a class="nav-link" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#curriculo">Currículo</a>
@@ -146,7 +145,9 @@
           <div class="row align-items-center h-100">
             <div class="col-md-6 text-start ">
               <h1 class="Orbitron">Oi, eu sou o Luan!</h1>
-              <h1 id="typed-text-desktop"></h1>
+              <p id="typed-text-desktop" class="intro-text-professional glitch">
+                Desenvolvedor Front-End
+              </p>
               <a href="./arq/Currículo.pdf" download class="btn-download1 mt-4 px-4 py-2">
                 <i class="bi bi-download me-2"></i>Baixar Currículo
               </a>
@@ -163,7 +164,9 @@
           <div class="row flex-column align-items-center h-100">
             <div class="col-12 d-flex flex-column justify-content-start" style="padding-top: 6rem;">
               <h1 class="Orbitron">Oi, eu sou o Luan</h1>
-              <h1 id="typed-text-mobile"></h1>
+              <p id="typed-text-mobile" class="intro-text-professional glitch">
+                Desenvolvedor Front-End.
+              </p>
               <a href="./curriculo.pdf" download class="btn mt-3 btn-download1 small-btn">
                 <i class="bi bi-download me-2"></i>Baixar Currículo
               </a>
@@ -184,10 +187,10 @@
               </div>
               <div class="col-md-8">
                 <h1 class="section-title">Sobre mim</h1>
-                <p class="bold">
+                <p class="bold fs-6 fs-md-5">
                   Ola, sou estudante de Sistemas para Internet na Fatec - Lins.
                   <br />
-                  Sou apaixondo por gatos e musica, no tempo livre gosto de
+                  Sou apaixonado por gatos e musica, no tempo livre gosto de
                   jogar jogos online, viajar, escutar musica e fotografar
                   paisagens
                   <br /><br />
@@ -197,6 +200,13 @@
                   de dados.
                   <br /><br />
                 </p>
+                <div class="hobbies-icons">
+                  <i class="bi bi-heart-fill" title="Gatos"></i>
+                  <i class="bi bi-music-note-beamed" title="Música"></i>
+                  <i class="bi bi-controller" title="Jogos"></i>
+                  <i class="bi bi-airplane" title="Viajar"></i>
+                  <i class="bi bi-camera-fill" title="Fotografia"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -354,156 +364,132 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="habilidades py-5" id="habilidades">
+        <div class="container d-flex justify-content-center">
+          <div class="card-habilidades position-relative p-4">
+            <h1 class="text-center mb-5 section-title">Habilidades</h1>
+            <div class="habilidades-container">
+              <span class="habilidade-badge">
+                <i class="devicon-photoshop-plain me-2"></i>Photoshop
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-html5-plain me-2"></i>HTML
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-css3-plain me-2"></i>CSS
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-mysql-plain me-2"></i>MySQL
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-bootstrap-plain me-2"></i>Bootstrap
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-java-plain me-2"></i>Java Web
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-python-plain me-2"></i>Python
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-angularjs-plain me-2"></i>Angular
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-figma-plain me-2"></i>Figma
+              </span>
+              <span class="habilidade-badge">
+                <i class="bi bi-palette me-2"></i>CorelDraw
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-netbeans-plain me-2"></i>NetBeans
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-javascript-plain me-2"></i>JavaScript
+              </span>
+            </div>
+          </div>
+        </div>
       </section>      
-
-      <section class="skills py-5 d-none d-md-block" id="skills">
-        <div class="container d-flex justify-content-center">
-          <div class="card-skills text-center position-relative">
-            <h1 class="mb-5 section-title">Skills</h1>
-
-            <div class="skills-floating">
-              <div class="skill-float" style="top: 5%; left: 10%">
-                <i class="devicon-html5-plain skill-float" title="HTML5"></i>
-              </div>
-              <div class="skill-float" style="top: 0%; left: 90%">
-                <i class="devicon-css3-plain skill-float" title="CSS3"></i>
-              </div>
-              <div class="skill-float" style="top: 15%; left: 60%">
-                <i class="devicon-javascript-plain skill-float" title="JavaScript"></i>
-              </div>
-              <div class="skill-float" style="top: 45%; left: 50%">
-                <i class="devicon-angularjs-plain skill-float" title="Angular"></i>
-              </div>
-              <div class="skill-float" style="top: 68%; left: 75%">
-                <i class="devicon-bootstrap-plain skill-float" title="Bootstrap"></i>
-              </div>
-              <div class="skill-float" style="top: 58%; left: 18%">
-                <i class="devicon-github-plain skill-float" title="GitHub"></i>
-              </div>
-              <div class="skill-float" style="top: 80%; left: -1%">
-                <i class="devicon-photoshop-plain skill-float" title="Photoshop"></i>
-              </div>
-              <div class="skill-float" style="top: 40%; left: 85%">
-                <i class="devicon-figma-plain skill-float" title="Figma"></i>
-              </div>
-              <div class="skill-float" style="top: 25%; left: 25%">
-                <i class="devicon-mysql-plain skill-float" title="MySQL"></i>
-              </div>
-              <div class="skill-float" style="top: 77%; left: 40%">
-                <i class="devicon-python-plain skill-float" title="Python"></i>
-              </div>
-              <div class="skill-float" style="top: 70%; left: 30%">
-                <i class="devicon-godot-plain skill-float" title="Godot"></i>
-              </div>
-              <div class="skill-float" style="top: 20%; left: 40%">
-                <i class="devicon-ionic-original skill-float" title="ionic"></i>
-              </div>
-              <div class="skill-float" style="top: 83%; left: 60%">
-                <i class="devicon-java-plain skill-float" title="Java"></i>
-              </div>
-              <div class="skill-float" style="top: 38%; left: 67%">
-                <i class="devicon-php-plain skill-float" title="PHP"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills py-5 d-block d-md-none" id="skills1">
-        <div class="container d-flex justify-content-center">
-          <div class="card-skills position-relative">
-            <h1 class="mb-5 section-title text-center">Skills</h1>
-
-            <div class="row g-4 justify-content-center skill-icons">
-              <div class="col-4">
-                <i class="devicon-html5-plain" title="HTML5"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-css3-plain" title="CSS3"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-javascript-plain" title="JavaScript"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-angularjs-plain" title="Angular"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-github-plain" title="GitHub"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-photoshop-plain" title="Photoshop"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-figma-plain" title="Figma"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-mysql-plain" title="MySQL"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-python-plain" title="Python"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-php-plain" title="PHP"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-java-plain" title="Java"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-ionic-original" title="Ionic"></i>
-              </div>
-              <div class="col-4">
-                <i class="devicon-godot-plain" title="Godot"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="curriculo py-5" id="curriculo">
         <div class="container d-flex justify-content-center">
           <div class="card-curriculo position-relative p-4">
-            <h1 class="text-center mb-4 section-title">Currículo</h1>
+            <h1 class="text-center mb-5 section-title">Currículo</h1>
 
-            <div class="curriculo-simulado d-flex flex-wrap align-items-start">
-              <div class="curriculo-info">
-                <h3>Informações Pessoais</h3>
-                <p><strong>Nome:</strong> Luan Henrique</p>
-                <p><strong>Email:</strong> luan.prezottofranca@gmail.com</p>
-                <p><strong>Telefone:</strong> (14) 99730-0928</p>
-                <p><strong>Localização:</strong> Pongaí, SP</p>
-
-                <h3 class="mt-3">Habilidades</h3>
-                <div class="curriculo-item habilidades">
-                  <p>Photoshop</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>MySQL</p>
-                  <p>Bootstrap</p>
-                  <p>Java Web</p>
-                  <p>Python</p>
-                  <p>Angular</p>
-                  <p>Figma</p>
-                  <p>CorelDraw</p>
+            <div class="row g-4 mb-4">
+              <div class="col-md-6">
+                <div class="curriculo-card h-100">
+                  <div class="curriculo-card-header">
+                    <i class="bi bi-person-fill me-2"></i>
+                    <h3 class="curriculo-card-title">Informações Pessoais</h3>
+                  </div>
+                  <div class="curriculo-card-body">
+                    <div class="curriculo-info-item">
+                      <i class="bi bi-person me-2"></i>
+                      <div>
+                        <strong>Nome</strong>
+                        <p class="mb-0">Luan Henrique</p>
+                      </div>
+                    </div>
+                    <div class="curriculo-info-item">
+                      <i class="bi bi-envelope me-2"></i>
+                      <div>
+                        <strong>Email</strong>
+                        <p class="mb-0 small">luan.prezottofranca@gmail.com</p>
+                      </div>
+                    </div>
+                    <div class="curriculo-info-item">
+                      <i class="bi bi-telephone me-2"></i>
+                      <div>
+                        <strong>Telefone</strong>
+                        <p class="mb-0">(14) 99730-0928</p>
+                      </div>
+                    </div>
+                    <div class="curriculo-info-item">
+                      <i class="bi bi-geo-alt me-2"></i>
+                      <div>
+                        <strong>Localização</strong>
+                        <p class="mb-0">Pongaí, SP</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <h3 class="mt-3">Formação</h3>
-                <div class="curriculo-item">
-                  <h4>Sistemas Para Internet</h4>
-                  <span>FATEC Lins - 2023 / 2026</span>
-                  <p>
-                    Foco em desenvolvimento web, programação orientada a
-                    objetos, banco de dados e frameworks front-end.
-                  </p>
+              <div class="col-md-6">
+                <div class="curriculo-card h-100">
+                  <div class="curriculo-card-header">
+                    <i class="bi bi-mortarboard-fill me-2"></i>
+                    <h3 class="curriculo-card-title">Formação</h3>
+                  </div>
+                  <div class="curriculo-card-body">
+                    <div class="curriculo-formacao">
+                      <h4 class="curriculo-formacao-titulo">Sistemas Para Internet</h4>
+                      <div class="curriculo-formacao-meta">
+                        <i class="bi bi-building me-1"></i>
+                        <span>FATEC Lins</span>
+                        <span class="curriculo-separador">•</span>
+                        <i class="bi bi-calendar3 me-1"></i>
+                        <span>2023</span>
+                      </div>
+                      <p class="curriculo-formacao-desc">
+                        Graduação tecnológica com foco em desenvolvimento web front-end, 
+                        abrangendo programação orientada a objetos, arquitetura de software, 
+                        banco de dados relacionais e não relacionais, frameworks front-end e back-end, 
+                        metodologias ágeis, UX/UI design e gestão de projetos. 
+                        Formação prática com projetos reais e integração com o mercado de trabalho.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="mt-4 text-center">
-              <a href="./arq/Currículo.pdf" download class="btn-download"
-                >Baixar Currículo</a>
+              <a href="./arq/Currículo.pdf" download class="btn-download">
+                <i class="bi bi-download me-2"></i>Baixar Currículo
+              </a>
             </div>
           </div>
         </div>
@@ -512,52 +498,90 @@
       <section class="contato py-5" id="contato">
         <div class="container d-flex justify-content-center">
           <div class="card-contato position-relative p-4 w-100">
-            <h1 class="text-center mb-5 section-title">Contato</h1>
-
+            <h1 class="text-center mb-4 section-title">Contato</h1>
             <div class="row align-items-center mb-4">
-              <div
-                class="col-md-auto d-flex justify-content-center mb-3 mb-md-0">
-                <img src="img/fotopb.jpg" alt="Foto Luan" class="foto-contato img-fluid rounded"/>
-              </div>
-              <div class="col-md text-md-start text-center">
-                <h3 class="fonte-pixel">Meus Contatos</h3>
-                <p><strong>Telefone:</strong> (14) 99730-0928</p>
-                <p>
-                  <strong>Email:</strong>
-                  <a href="mailto:luan.prezottofranca@gmail.com">luan.prezottofranca@gmail.com</a>
-                </p>
-                <p>
-                  <strong>Instagram:</strong>
-                  <a href="https://instagram.com/gamificado" target="_blank">@gamificado</a>
-                </p>
+              <div class="col-12 text-center">
+                <div class="contato-icons-container gap-4 gap-sm-3 p-4 p-sm-3">
+                  <a href="mailto:luanhenriquepfranca@gmail.com" 
+                     class="contato-icon-link" 
+                     aria-label="Enviar Email"
+                     data-tooltip="luanhenriquepfranca@gmail.com">
+                    <i class="bi bi-envelope-fill fs-4 fs-sm-2"></i>
+                  </a>
+                  
+                  <a href="tel:+5514997300928" 
+                     class="contato-icon-link" 
+                     aria-label="Ligar"
+                     data-tooltip="(14) 99730-0928">
+                    <i class="bi bi-telephone-fill fs-4 fs-sm-2"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/gamificado/" 
+                    target="_blank"
+                     class="contato-icon-link" 
+                     aria-label="Visitar Instagram"
+                     data-tooltip="@gamificado">
+                    <i class="bi bi-instagram fs-fill fs-4 fs-sm-2"></i>
+                  </a>
+                  
+                  <a href="https://github.com/luanprezotto" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     class="contato-icon-link" 
+                     aria-label="Visitar GitHub"
+                     data-tooltip="@luanprezotto">
+                    <i class="bi bi-github fs-4 fs-sm-2"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/luan-henrique-prezotto-b476a9272/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     class="contato-icon-link" 
+                     aria-label="Visitar linkedin"
+                     data-tooltip="luan henrique prezotto">
+                    <i class="bi bi-linkedin fs-4 fs-sm-2"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="row align-items-start">
-              <div class="col-md-6 text-md-end text-center mt-4 mt-md-5">
-                <h3 class="fonte-pixel">Contatos da Fatec-Lins</h3>
-                <p><strong>FATEC Lins</strong></p>
-                <p>
-                  Email:
-                  <a href="mailto:fateclins@fatec.sp.gov.br">fateclins@fatec.sp.gov.br</a>
-                </p>
-                <p>Telefone: (14) 3523-1217</p>
-                <p>
-                  <a href="https://www.fateclins.edu.br" target="_blank">www.fateclins.edu.br</a>
-                </p>
+            <div class="row align-items-start g-4">
+              <div class="col-md-6">
+                <div class="contato-fatec-info">
+                  <h3 class="fonte-pixel mb-3 text-center text-md-start">Contatos da Fatec</h3>
+                  <div class="contato-item mb-3">
+                    <i class="bi bi-building me-2"></i>
+                    <strong>FATEC Lins</strong>
+                  </div>
+                  <div class="contato-item mb-3">
+                    <i class="bi bi-envelope me-2"></i>
+                    <a href="mailto:fateclins@fatec.sp.gov.br">fateclins@fatec.sp.gov.br</a>
+                  </div>
+                  <div class="contato-item mb-3">
+                    <i class="bi bi-telephone me-2"></i>
+                    <span>(14) 3523-1217</span>
+                  </div>
+                  <div class="contato-item">
+                    <i class="bi bi-globe me-2"></i>
+                    <a href="https://www.fateclins.edu.br" target="_blank">www.fateclins.edu.br</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6 d-flex justify-content-center justify-content-md-start mt-4 mt-md-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.1132480308784!2d-49.75280042396741!3d-21.69832629580409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ecb135a5dd%3A0x66b807178c781125!2sFATEC%20Lins!5e0!3m2!1spt-BR!2sbr!4v1760562218890!5m2!1spt-BR!2sbr" width="100%" height="250" style="border: 0; max-width: 400px; border-radius: 5px;" allowfullscreen="" loading="lazy">
-                </iframe>
+              <div class="col-md-6">
+                <div class="contato-mapa">
+                  <h3 class="fonte-pixel mb-3 text-center text-md-start">Localização</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.1132480308784!2d-49.75280042396741!3d-21.69832629580409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ecb135a5dd%3A0x66b807178c781125!2sFATEC%20Lins!5e0!3m2!1spt-BR!2sbr!4v1760562218890!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                  </iframe>
+                </div>
               </div>
-            </div>
-
-            <div class="d-flex justify-content-center d-md-block">
-              <img src="img/logoFatec.svg" alt="Logo Secundária" id="logoFatec" class="logoFatec" style="filter: none"/>
+              <div class="text-center mb-4">
+              <img src="img/logoFatec.svg" alt="Logo FATEC Lins" id="logoFatec" class="logoFatec mb-3" style="filter: none; max-width: 200px; height: auto;"/>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
     </main>
 
     <div class="modal fade" id="modalMirrorFashion" tabindex="-1" aria-labelledby="modalMirrorFashionLabel" aria-hidden="true">
@@ -570,16 +594,21 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/mirrorFashion.png" class="img-fluid mb-3" alt="mirrorFashion"/>
+            <img src="img/mirrorFashion.png" class="img-fluid mb-3 modal-project-image" alt="mirrorFashion"/>
             <p>
               Projeto realizado no primeiro semestre, feito apenas com HTML e
               CSS, para aprender os conceitos básicos da programação. Durante o
               desenvolvimento, foram explorados fundamentos de design visual,
               semântica HTML e estruturação de páginas web.
             </p>
-            <p>
-              TECNOLOGIAS UTILIZADAS: HTML5 E CSS3
-            </p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-html5-plain me-2"></i>HTML5
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-css3-plain me-2"></i>CSS3
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -593,14 +622,24 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/Yolo.png" class="img-fluid mb-3" alt="Yolo" />
+            <img src="img/Yolo.png" class="img-fluid mb-3 modal-project-image" alt="Yolo" />
             <p>
               Projeto desenvolvido no segundo semestre, consistindo em um site
               responsivo criado com HTML, CSS e Materialize. O objetivo foi
               aplicar conceitos de design responsivo e organização visual,
               resultando em uma interface adaptável a diferentes dispositivos.
             </p>
-            <p>TECNOLOGIAS UTILIZADAS: HTML5, CSS3 e Materialize</p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-html5-plain me-2"></i>HTML5
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-css3-plain me-2"></i>CSS3
+              </span>
+              <span class="habilidade-badge">
+                <i class="bi bi-box me-2"></i>Materialize
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -614,7 +653,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/Crud.png" class="img-fluid mb-3" alt="RedTech" />
+            <img src="img/Crud.png" class="img-fluid mb-3 modal-project-image" alt="RedTech" />
             <p>
               Projeto realizado no terceiro semestre, consistindo em um CRUD de
               demandas de manutenção de computadores. Desenvolvido com HTML, CSS
@@ -623,7 +662,17 @@
               Storage para armazenar os dados e aplica conceitos de programação
               orientada a objetos.
             </p>
-            <p>TECNOLOGIAS UTILIZADAS: HTML5, CSS3 e JavaScript</p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-html5-plain me-2"></i>HTML5
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-css3-plain me-2"></i>CSS3
+              </span>
+              <span class="habilidade-badge">
+                <i class="devicon-javascript-plain me-2"></i>JavaScript
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -639,7 +688,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/bd.png" class="img-fluid mb-3" alt="Gravadora de Música"/>
+            <img src="img/bd.png" class="img-fluid mb-3 modal-project-image" alt="Gravadora de Música"/>
             <p>
               Projeto desenvolvido no quarto semestre, criando um banco de dados
               relacional para uma gravadora musical. Inclui tabelas de artistas,
@@ -648,7 +697,14 @@
               atualização, exclusão e consultas, permitindo organizar e
               consultar informações de forma estruturada e eficiente.
             </p>
-            <p>TECNOLOGIAS UTILIZADAS: MySQL e Workbench</p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-mysql-plain me-2"></i>MySQL
+              </span>
+              <span class="habilidade-badge">
+                <i class="bi bi-database me-2"></i>Workbench
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -664,7 +720,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/planejador.png" class="img-fluid mb-3" alt="Planejador de Viagem"/>
+            <img src="img/planejador.png" class="img-fluid mb-3 modal-project-image" alt="Planejador de Viagem"/>
             <p>
               Projeto desenvolvido no quinto semestre, voltado ao planejamento
               de custos de viagem. Permite registrar despesas com transporte,
@@ -673,7 +729,14 @@
               interface intuitiva e responsiva, unindo organização financeira e
               experiência do usuário.
             </p>
-            <p>TECNOLOGIAS UTILIZADAS: IONIC Framework e Android Studio</p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-ionic-original me-2"></i>Ionic
+              </span>
+              <span class="habilidade-badge">
+                <i class="bi bi-phone me-2"></i>Android Studio
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -687,7 +750,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <img src="img/PooJava.png" class="img-fluid mb-3" alt="POO em Java"/>
+            <img src="img/PooJava.png" class="img-fluid mb-3 modal-project-image" alt="POO em Java"/>
             <p>
               Projeto desenvolvido no último semestre, voltado ao registro e
               gerenciamento de produtos em uma loja. Permite cadastrar, excluir
@@ -697,7 +760,14 @@
               integrando conceitos de programação orientada a objetos e
               manipulação de dados em tabela.
             </p>
-            <p>TECNOLOGIAS UTILIZADAS: JavaScript e Apache NetBeans</p>
+            <div class="modal-technologies">
+              <span class="habilidade-badge">
+                <i class="devicon-java-plain me-2"></i>Java
+              </span>
+              <span class="habilidade-badge">
+                <i class="bi bi-code-square me-2"></i>NetBeans
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -749,13 +819,13 @@
 
     <footer class="footer-asimetrico d-none d-md-block">
       <div class="footer-content">
-        <p>© 2025 - Luan Henrique</p>
+        <p>© 2025 Luan Henrique - Todos os direitos reservados</p>
       </div>
     </footer>
 
     <footer class="footer-liso d-block d-md-none">
       <div class="footer-content text-center">
-        <p>© 2025 - Luan Henrique</p>
+        <p>© 2025 Luan Henrique - Todos os direitos reservados</p>
       </div>
     </footer>
 

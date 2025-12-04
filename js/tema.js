@@ -64,8 +64,27 @@ const ThemeManager = {
 
     console.log(`Aplicando tema: ${theme.name}`);
 
+    document.body.classList.add('theme-transitioning');
+
+    document.querySelectorAll('.card-filho .card-overlay').forEach(overlay => {
+      overlay.style.opacity = '0';
+      overlay.style.transform = 'translateY(100%)';
+      overlay.style.pointerEvents = 'none';
+      overlay.style.visibility = 'hidden';
+    });
+
+    document.querySelectorAll('.card-sobre, .card-projetos, .card-habilidades, .card-curriculo, .card-contato, .card-extras').forEach(card => {
+      card.style.backdropFilter = 'none';
+      card.style.webkitBackdropFilter = 'none';
+    });
+
     const root = document.documentElement;
     const body = document.body;
+
+    Object.keys(this.THEMES).forEach(key => {
+      body.classList.remove(`theme-${key}`);
+    });
+    body.classList.add(`theme-${themeName}`);
 
     root.style.setProperty('--primary-color', theme.primaryColor);
     root.style.setProperty('--secondary-color', theme.secondaryColor);
@@ -75,21 +94,29 @@ const ThemeManager = {
     root.style.setProperty('--card-bg', theme.cardBg);
     root.style.setProperty('--navbar-bg', theme.navbarBg);
 
-    Object.keys(this.THEMES).forEach(key => {
-      body.classList.remove(`theme-${key}`);
+    requestAnimationFrame(() => {
+      this.applyThemeSpecificStyles(themeName);
+      
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          document.querySelectorAll('.card-sobre, .card-projetos, .card-habilidades, .card-curriculo, .card-contato, .card-extras').forEach(card => {
+            card.style.backdropFilter = '';
+            card.style.webkitBackdropFilter = '';
+          });
+          document.body.classList.remove('theme-transitioning');
+        }, 350);
+        
+        this.saveTheme(themeName);
+        this.updateThemeLabel(theme.name);
+        this.updateActiveState(themeName);
+        
+        if (typeof window.updateOrbsForTheme === 'function') {
+          window.updateOrbsForTheme(themeName);
+        }
+        
+        console.log('Tema aplicado com sucesso!');
+      });
     });
-    body.classList.add(`theme-${themeName}`);
-
-    this.saveTheme(themeName);
-    this.updateThemeLabel(theme.name);
-    this.updateActiveState(themeName);
-    this.applyThemeSpecificStyles(themeName);
-    
-    if (typeof window.updateOrbsForTheme === 'function') {
-      window.updateOrbsForTheme(themeName);
-    }
-    
-    console.log('Tema aplicado com sucesso!');
   },
 
   applyThemeSpecificStyles(themeName) {
@@ -116,7 +143,9 @@ const ThemeManager = {
         }
       });
 
-    document.querySelectorAll('.card-sobre, .card-projetos, .card-skills, .card-curriculo, .card-contato, .card-extras').forEach(card => {
+    document.querySelectorAll('.card-sobre, .card-projetos, .card-habilidades, .card-curriculo, .card-contato, .card-extras').forEach(card => {
+      void card.offsetHeight;
+      
       if (isLight) {
         card.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
         card.style.boxShadow = '0 8px 18px rgba(14, 165, 233, 0.06)';
@@ -124,6 +153,24 @@ const ThemeManager = {
       } else {
         card.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
         card.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.6)';
+        card.style.border = 'none';
+      }
+    });
+
+    document.querySelectorAll('.card-filho').forEach(card => {
+      const overlay = card.querySelector('.card-overlay');
+      if (overlay) {
+        overlay.style.opacity = '0';
+        overlay.style.transform = 'translateY(100%)';
+        overlay.style.pointerEvents = 'none';
+        overlay.style.visibility = 'hidden';
+      }
+      
+      if (isLight) {
+        card.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+        card.style.border = '1px solid rgba(14, 165, 233, 0.2)';
+      } else {
+        card.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
         card.style.border = 'none';
       }
     });

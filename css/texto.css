@@ -1,9 +1,49 @@
-.font1{
-    font-family: 'Pixelify Sans', sans-serif;
+.intro-text-professional {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 400;
+    max-width: 100%;
+    margin: 1.5rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    box-sizing: border-box;
+    display: block;
 }
-.font2{
-    font-family: 'Syne Mono', monospace;
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.font3{
-    font-family: 'Rubik Glitch', sans-serif;
+
+@media (max-width: 767.98px) {
+    .intro-text-professional {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro-text-professional {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        max-width: 520px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+        box-sizing: border-box;
+        display: block;
+    }
 }
